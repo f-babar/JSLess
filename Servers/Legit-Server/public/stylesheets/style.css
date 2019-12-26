@@ -1,0 +1,172 @@
+#chat{
+	overflow: auto;
+	padding: 5px;
+	background: rgba(255, 255, 255, 0.3);
+	max-height: 550px;
+	min-height: 300px;
+	width: 60%;
+	word-wrap: break-word;
+  margin: auto;
+	text-align: justify!important;
+}
+
+#input{
+	resize: none;
+}
+
+#chatContainer{
+	z-index: -1;
+}
+
+#bgimg-1 {
+  background-image: url('/images/background.svg');
+}
+
+#loginForm{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.darkColor {
+	background: black !important;
+	color: white;
+}
+
+.centerParagraph {
+	text-align: center;
+}
+
+#blurb{
+	width: 50%;
+	margin: auto;
+}
+
+#blurbCont{
+	margin-top: 100px;;
+}
+
+#nav{
+	overflow: visible !important;
+	position: relative;
+	z-index: 1000;
+}
+
+#DDbtn{
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+	border: none;
+  padding: 8px 16px;
+}
+
+#DDbtn:focus{
+	outline:0;
+	background-color: #CBCBCB;
+	color: black;
+}
+
+#DDbtn:hover{
+	background-color: #CBCBCB;
+	color: black;
+}
+
+.DDcontent {
+  display: none !important;
+  position: fixed !important;
+  background-color: black;
+  align-content: center !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) !important;
+}
+
+.DDcontent button {
+  display: block !important;
+}
+
+.show {display: block !important;}
+
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+/* CHAT CSS */
+
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #000;
+}
+
+.chat li .chat-body p
+{
+    margin: 0;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+#chat_box {
+	padding-bottom: 10px;
+	background: rgba(255, 255, 255, 0.33);
+	word-wrap: break-word;
+  margin: auto;
+	text-align: justify!important;
+	width:100%;
+}
+.navbar-fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+#btn-chat {
+	margin-left: 10px;
+	width: 100%;
+	margin-top: 0px;
+	height: 100%;
+	background: black;
+	color: white;
+	border-color: black;
+	border-radius: 5px;
+}
+
+#chat_input {
+	width: 61.5%;
+	margin: auto;
+}

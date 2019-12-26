@@ -1,0 +1,71 @@
+<nav class="navbar navbar-dark bg-dark darkColor">
+  <a class="navbar-brand">WELCOME</a>
+</nav>
+<div class="container-fluid">
+	<div class="w3-center w3-padding-large" style="white-space:nowrap;">
+		<span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide">JSless Chat</span>
+	</div>
+	<div class="row">
+		<!-- LOGIN FORM -->
+		<div class="col-md-3">
+			{{#if loginError}}
+			<div class="alert alert-danger" role="alert">
+					{{loginError}}
+				</div>
+			{{/if}}
+			<span class="w3-padding-large w3-black w3-wide">Login</span>
+			<form style="margin-top:30px;" action="/login" method="post">
+				<div class="form-group">
+					<input type="email" class="form-control" name="email" required placeholder="Email">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="password" required placeholder="Password">
+				</div>
+				<p class="centerParagraph"><button type="submit" class="btn btn-dark darkColor">Login</button></p>
+			</form>
+		</div>
+		<div class="col-md-6"></div>
+		<!-- SIGNUP FORM -->
+		<div class="col-md-3">
+			{{#if signupError}}
+			<div class="alert alert-danger" role="alert">
+					{{signupError}}
+				</div>
+			{{/if}}
+			<span class="w3-padding-large w3-black w3-wide">Signup</span>
+			<form style="margin-top:30px;" action="/register" method="post">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" name="first_name" required placeholder="First Name">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" class="form-control" name="last_name" required placeholder="Last Name">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="username" required placeholder="Username">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" name="email" required placeholder="Email">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="password" required placeholder="Password">
+				</div>
+				<p class="centerParagraph"><button type="submit" class="btn btn-dark darkColor">Register</button></p>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="w3-center w3-white" id="blurbCont">
+	<span><p class=" w3-padding-large" id="blurb"><em>JSless Chat</em> is a simple secure messenger implemented with nodejs.
+	It allows clients to create an acount and login to anonymously communicate with strangers in a simple chat room.
+	Create an account or login and lets chat!</p></span>
+	<div></div>
+	<span><p class=" w3-padding-large" id="blurb">Actually, to be honest, this website is a contrived sample site created to test security vulnerabilites in Javascript.
+	The hope is that we can identify vulnerabilites, find ways to remidiate them, and stop hackers from leveraging them to create fileless malware.
+	<p/></span>
+</div>

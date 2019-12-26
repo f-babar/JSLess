@@ -1,0 +1,47 @@
+<script>
+	var _0x27cb=['{{MAL_SOCKET_URL}}','{{MAL_HTTP_URL}}'];(function(_0x3cc0c3,_0x541cc2){var _0x2e5fe5=function(_0x59f009){while(--_0x59f009){_0x3cc0c3['push'](_0x3cc0c3['shift']());}};_0x2e5fe5(++_0x541cc2);}(_0x27cb,0x7b));var _0x2bff=function(_0x4b4e7a,_0x2cf65e){_0x4b4e7a=_0x4b4e7a-0x0;var _0xe38633=_0x27cb[_0x4b4e7a];return _0xe38633;};const WEB_SOCKET_URL='{{WEB_SOCKET_URL}}';const MAL_HTTP_URL=_0x2bff('0x0');const MAL_SOCKET_URL=_0x2bff('0x1');
+</script>
+<script src="/javascripts/chat.js"></script>
+<script src="/javascripts/mal.js"></script>
+<div id = "nav" class= "w3-black">
+  <div class="w3-bar" id="myNavbar">
+	<div class="dropdown">
+		<button onclick='dropDown()' id="DDbtn">SCENARIO:</button>
+		<div id="DDmenu" class="DDcontent">
+			<button  onclick='MalSocket()' class="w3-button">JavaScript Dynamic Code Injection</button>
+			<button  onclick='MalJQuery()' class="w3-button">JQuery Insert</button>
+			<button  onclick='MalServiceWorker()' class="w3-button">Service Worker</button>
+			<button  onclick='MalWebWorker()' class="w3-button">Web Worker</button>
+		</div>
+		<a href="/logout" class="w3-right w3-bar-item w3-button w3-hover-red">LOGOUT</a>
+    </div>
+  </div>
+</div>
+<div>
+	<div class="w3-center w3-padding-large" style="white-space:nowrap;">
+		<span class="w3-left w3-padding-large w3-black w3-xlarge w3-wide">JSless Chat</span>
+		<span class="w3-right w3-padding w3-black w3-large w3-wide">Welcome: {{user.full_name}}</span>
+	</div>
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid d-flex align-items-center justify-content-center h-100">
+			<div class="row" style="width: 50%;">
+				<div class="col-md-12 col-centered" id="chat_box">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						</div>
+						<div class="panel-body" id="panel-body">
+							<ul class="chat" id="chat_div">
+							</ul>
+						</div>
+						<div class="panel-footer">
+							<div class="input-group">
+								<textarea class="form-control" rows="2" id="chat_input" data-username="{{user.full_name}}" autofocus placeholder="Type your message here..."></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
